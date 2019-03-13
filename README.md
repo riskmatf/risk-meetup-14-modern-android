@@ -1,8 +1,7 @@
 # RISK Meetup #14: Moderno Android programiranje
 
-## :construction: Ovaj projekat trenutno ima probleme sa kompajliranjem, koji će ubrzo biti sređeni! :construction:
+Aplikacija sa predavanja **Moderno Android programiranje**, koja demonstrira upotrebu *Android Architecture Components* za čuvanje beležaka u aplikaciji.
 
 ## TODO:
-- Ispravka kompilacije
 - Doterivanje koda
 - Dokumentacija i komentari
