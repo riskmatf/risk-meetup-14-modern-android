@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
         val adapter = NoteAdapter(this)
         recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = adapter
 
         noteViewModel = ViewModelProviders.of(this).get(NoteViewModel::class.java)
 

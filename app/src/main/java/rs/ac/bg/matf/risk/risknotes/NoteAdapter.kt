@@ -5,7 +5,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
+import android.widget.TextView
 import rs.ac.bg.matf.risk.risknotes.data.Note
 
 class NoteAdapter(context: Context) : RecyclerView.Adapter<NoteAdapter.ViewHolder>() {
@@ -31,14 +31,14 @@ class NoteAdapter(context: Context) : RecyclerView.Adapter<NoteAdapter.ViewHolde
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         val currentItem = allNotes[position]
 
-        viewHolder.editNoteTitle.setText(currentItem.title)
-        viewHolder.editNoteContent.setText(currentItem.content)
+        viewHolder.noteTitle.text = currentItem.title
+        viewHolder.noteContent.text = currentItem.content
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        val editNoteTitle = itemView.findViewById<EditText>(R.id.note_title)
-        val editNoteContent = itemView.findViewById<EditText>(R.id.note_text)
+        val noteTitle: TextView = itemView.findViewById(R.id.note_title)
+        val noteContent: TextView = itemView.findViewById(R.id.note_content)
     }
 
 

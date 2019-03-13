@@ -7,12 +7,12 @@
 
     <TextView
             tools:text="Naslov"
-            android:id="@+id/note_text"
+            android:id="@+id/note_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:textSize="24sp"/>
 
     <TextView
-            android:id="@+id/note_title"
+            android:id="@+id/note_content"
             tools:text="Podnaslov"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
